@@ -17,7 +17,8 @@ namespace PSFF {
  */
 	inline bool initializeFile(const std::string& initialNode,
 								const std::string& filename,
-								 const bool shouldOverwrite) {
+								 const bool shouldOverwrite) 
+	{
 		std::string firstLine; 																//String to store the first line of the file
 		if(initialNode=="") 																//Check for empty initial node
 		{
@@ -75,8 +76,11 @@ namespace PSFF {
 					BDL::linearDebugMessage("File could not be opened",true);
 					#endif //BDL
 					return false;
-					}
+				}
 			}
+		}
+		void writeToFile(){
+			
 		}
 	}
 }
