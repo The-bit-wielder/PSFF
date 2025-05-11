@@ -15,9 +15,9 @@ namespace PSFF {
  * @param shouldOverwrite Whether to overwrite the file if it already exists with a different node
  * @return true if initialization was successful, false otherwise
  */
-	inline bool initializeFile(const std::string& initialNode,
-								const std::string& filename,
-								 const bool shouldOverwrite) 
+inline bool initializeFile(const std::string& initialNode,
+                                const std::string& filename,
+                                 const bool shouldOverwrite) 
 	{
 		std::string firstLine; 																//String to store the first line of the file
 		if(initialNode=="") 																//Check for empty initial node
@@ -78,9 +78,6 @@ namespace PSFF {
 					return false;
 				}
 			}
-		}
-		void writeToFile(){
-			
 		}
 	}
 }
